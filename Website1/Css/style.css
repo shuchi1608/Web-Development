@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('../Images/laptop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.2;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.2;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.nav-item a {
+    color: black!important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-style: italic;
+}
+
+i {
+    color: #2fccd0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+}
+
+.header-buttons a {
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    background: #fff;
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: black;
+}
+
+
+/*********************** Three-div CSS ***********************/
+
+.three-div {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div {
+    background: #fff;
+    padding: 50px!important;
+    transition: 0.3s;
+}
+
+.extra-div h2,
+.servicediv h2 {
+    font-size: 1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+}
+
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+
+/* <!----------------------------- TWO COLUMN DIVIDED --------------------------------> */
+
+.serviceoffer {
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 0.6rem !important;
+    margin-bottom: 25px !important;
+}
+
+
+/* ****************Counter Div **********************/
+
+.counterdiv {
+    margin: 100px 0;
+}
+
+.counterdiv h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* <!--------------------------------- Pricing Div ------------------------> */
+
+.panel-pricing {
+    background: #f7f7f9;
+}
+
+.panel-pricing:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.panel-pricing .panel-heading {
+    padding: 20px 10px;
+}
+
+.panel-pricing .panel-heading .fa {
+    margin-top: 10px;
+    font-size: 58px;
+}
+
+.panel-pricing .list-group-item {
+    color: #777777;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.panel-pricing .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.panel-pricing .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.panel-pricing .panel-body {
+    background-color: #f0f0f0;
+    font-size: 40px;
+    color: #777777;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+/***************************Contact Us ******************************* */
+
+.contactus {
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+
+/****************************** Subscribe to Newsletter *********************/
+
+.newsletter {
+    margin-top: -200px;
+    padding: 40px 0;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter .content h2 {
+    color: black;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.newsletter .content .form-control {
+    height: 50px;
+    border-color: white;
+    border: 2px solid black;
+}
+
+.newsletter .content .btn {
+    min-height: 50px;
+    border-radius: 0;
+    background: black;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+
+/************************************ Footer Section Started **********************/
+
+.footersection {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding: 40px 0 5px 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    position: relative;
+    text-align: center;
+}
+
+.footersection p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.footersection h3 {
+    margin-bottom: 25px;
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+}
+
+.footersection li a {
+    color: black;
+}
+
+.footer-div .content .form-control {
+    border: 2px solid black;
+}
+
+.footer-div .content .btn {
+    border: 2px solid black;
+    background: black;
+    color: #fff;
+}
